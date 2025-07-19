@@ -19,5 +19,6 @@ func (h *Handler) home(c *fiber.Ctx) error {
 	return c.SendString("Hello")
 }
 func (h *Handler) error(c *fiber.Ctx) error {
+	//return fmt.Errorf("Error")
 	return c.SendString("Error")
 }
