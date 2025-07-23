@@ -1,0 +1,17 @@
+package components
+
+templ Link(href string, text string){
+    @LinkStyle()
+    <a href={templ.SafeURL(href)} class="link">{text}</a>
+}
+
+templ LinkStyle(){
+    <style>
+        .link{
+            text-decoration: none;
+            color: var(--color-black);
+            font-size:16px;
+            cursor: pointer;
+        }
+    </style>
+}

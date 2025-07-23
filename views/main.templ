@@ -1,6 +1,5 @@
 package views
 
-import "github.com/setter2008/newsweek/views/components"
 import "github.com/setter2008/newsweek/views/layout"
 
 templ Main(){
@@ -9,11 +8,10 @@ templ Main(){
         MetaDescription: "Еженедельные новости, обзор мероприятий и событий в мире.",
     }){
         <main>
-            @layout.Header(){
-                @components.Title("Новости")
-                @components.SubTitle("Мировая история космоса")
-            }
+            @layout.Header(){}
+            @layout.Filter(){}
             Main
+            @layout.Footer(){}
         </main>
     }
 }

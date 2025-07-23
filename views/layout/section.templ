@@ -1,0 +1,42 @@
+package layout
+
+import "github.com/setter2008/newsweek/views/components"
+
+templ Section(){
+    @SectionStyle()
+    <div class="section">
+        <div class="menu__left">
+            @components.LinkButton("/register"){
+                            <span>Еда</span>
+                        }
+            @components.LinkButton("/register"){
+                                        <span>Животные</span>
+                                    }
+            @components.LinkButton("/register"){
+                            <span>Спорт</span>
+                        }
+            @components.LinkButton("/register"){
+                                        <span>Музыка</span>
+                                    }
+            @components.LinkButton("/register"){
+                            <span>Технологии</span>
+                        }
+            @components.LinkButton("/register"){
+                                        <span>Прочее</span>
+                                    }
+        </div>
+    </div>
+}
+
+templ SectionStyle(){
+    <style>
+        .section{
+            display: flex;
+            justify-content: space-between;
+            padding: 20px 0;
+            max-width: 1290px;
+            align-item: center;
+            width: 100%;
+        }
+    </style>
+}

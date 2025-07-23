@@ -1,0 +1,30 @@
+package layout
+
+templ Footer(){
+      @FooterStyle()
+        <div class="footer">
+            @FooterMenu()
+          { children... }
+        </div>
+}
+
+templ FooterStyle(){
+   <style>
+    .footer{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer__right{
+        display: flex;
+        gap: 20px;
+        align-items: center;
+            }
+    .footer__left{
+        display: flex;
+        gap: 20px;
+        align-items:baseline;
+    }
+   </style>
+}

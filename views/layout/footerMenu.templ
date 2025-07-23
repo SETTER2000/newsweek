@@ -2,23 +2,20 @@ package layout
 
 import "github.com/setter2008/newsweek/views/components"
 
-templ Menu(){
-    @MenuStyle()
-    <div class="menu">
-        <div class="menu__left">
-            @components.Logo()
+templ FooterMenu(){
+    @FooterMenuStyle()
+        <div class="menu">
+            <div class="footer__left">
+                @components.Link("/", "Правило обработки персональных данных")
+                @components.Link("/", "Все права защищены 200%")
+            </div>
+            <div class="footer__right">
+                @components.Link("/", "Вход")
+            </div>
         </div>
-        <div class="menu__right">
-            @components.Search("Поиск новости")
-            @components.Link("/", "Вход")
-            @components.LinkButton("/register"){
-                <span>Регистрация</span>
-            }
-        </div>
-    </div>
 }
 
-templ MenuStyle(){
+templ FooterMenuStyle(){
     <style>
         .menu{
             display: flex;
