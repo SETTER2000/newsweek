@@ -5,7 +5,9 @@ import "github.com/setter2008/newsweek/views/components"
 templ Menu(){
     @MenuStyle()
     <div class="menu">
-        <img src="/public/images/logo.png">
+        <div class="menu__left">
+            <img class="menu__left-logo" src="/public/images/logo.svg">
+        </div>
         <div class="menu__right">
             <input type="text" class="menu__right-input" />
             <a class="menu__right-link">{"Вход"}</a>
@@ -31,11 +33,20 @@ templ MenuStyle(){
             gap: 20px;
             align-items: center;
         }
+        .menu__left{
+            display: flex;
+            gap: 20px;
+            align-items:baseline;
+        }
         .menu__right-link{
             text-decoration: none;
             color: var(--color-black);
             font-size:16px;
             cursor: pointer;
+        }
+        .menu__left-logo{
+            cursor: pointer;
+            width: 200px;
         }
         .menu__right-link:hover{
             color: #000000;

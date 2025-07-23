@@ -35,14 +35,14 @@ func Menu() templ.Component {
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
-		templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 1, "<div class=\"menu\"><img src=\"/public/images/logo.png\"><div class=\"menu__right\"><input type=\"text\" class=\"menu__right-input\"> <a class=\"menu__right-link\">")
+		templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 1, "<div class=\"menu\"><div class=\"menu__left\"><img class=\"menu__left-logo\" src=\"/public/images/logo.svg\"></div><div class=\"menu__right\"><input type=\"text\" class=\"menu__right-input\"> <a class=\"menu__right-link\">")
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
 		var templ_7745c5c3_Var2 string
 		templ_7745c5c3_Var2, templ_7745c5c3_Err = templ.JoinStringErrs("Вход")
 		if templ_7745c5c3_Err != nil {
-			return templ.Error{Err: templ_7745c5c3_Err, FileName: `views/layout/menu.templ`, Line: 11, Col: 51}
+			return templ.Error{Err: templ_7745c5c3_Err, FileName: `views/layout/menu.templ`, Line: 13, Col: 51}
 		}
 		_, templ_7745c5c3_Err = templ_7745c5c3_Buffer.WriteString(templ.EscapeString(templ_7745c5c3_Var2))
 		if templ_7745c5c3_Err != nil {
@@ -103,7 +103,7 @@ func MenuStyle() templ.Component {
 			templ_7745c5c3_Var4 = templ.NopComponent
 		}
 		ctx = templ.ClearChildren(ctx)
-		templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 5, "<style>\r\n        .menu{\r\n            display: flex;\r\n            justify-content: space-between;\r\n            padding: 20px 0;\r\n            max-width: 1290px;\r\n            align-item: center;\r\n            width: 100%;\r\n        }\r\n        .menu__right{\r\n            display: flex;\r\n            gap: 20px;\r\n            align-items: center;\r\n        }\r\n        .menu__right-link{\r\n            text-decoration: none;\r\n            color: var(--color-black);\r\n            font-size:16px;\r\n            cursor: pointer;\r\n        }\r\n        .menu__right-link:hover{\r\n            color: #000000;\r\n        }\r\n    </style>")
+		templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 5, "<style>\r\n        .menu{\r\n            display: flex;\r\n            justify-content: space-between;\r\n            padding: 20px 0;\r\n            max-width: 1290px;\r\n            align-item: center;\r\n            width: 100%;\r\n        }\r\n        .menu__right{\r\n            display: flex;\r\n            gap: 20px;\r\n            align-items: center;\r\n        }\r\n        .menu__left{\r\n            display: flex;\r\n            gap: 20px;\r\n            align-items:baseline;\r\n        }\r\n        .menu__right-link{\r\n            text-decoration: none;\r\n            color: var(--color-black);\r\n            font-size:16px;\r\n            cursor: pointer;\r\n        }\r\n        .menu__left-logo{\r\n            text-decoration: none;\r\n            color: var(--color-black);\r\n            font-size:16px;\r\n            cursor: pointer;\r\n            width: 200px;\r\n        }\r\n        .menu__right-link:hover{\r\n            color: #000000;\r\n        }\r\n    </style>")
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}

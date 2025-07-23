@@ -68,7 +68,7 @@ func Main() templ.Component {
 				if templ_7745c5c3_Err != nil {
 					return templ_7745c5c3_Err
 				}
-				templ_7745c5c3_Err = components.SubTitle("Мировые истории космоса").Render(ctx, templ_7745c5c3_Buffer)
+				templ_7745c5c3_Err = components.SubTitle("Мировая история космоса").Render(ctx, templ_7745c5c3_Buffer)
 				if templ_7745c5c3_Err != nil {
 					return templ_7745c5c3_Err
 				}
