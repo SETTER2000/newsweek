@@ -1,0 +1,44 @@
+package layout
+
+import "github.com/setter2008/newsweek/views/components"
+
+templ Menu(){
+    @MenuStyle()
+    <div class="menu">
+        <img src="/public/images/logo.png">
+        <div class="menu__right">
+            <input type="text" class="menu__right-input" />
+            <a class="menu__right-link">{"Вход"}</a>
+            @components.LinkButton("/register"){
+                <span>Регистрация</span>
+            }
+        </div>
+    </div>
+}
+
+templ MenuStyle(){
+    <style>
+        .menu{
+            display: flex;
+            justify-content: space-between;
+            padding: 20px 0;
+            max-width: 1290px;
+            align-item: center;
+            width: 100%;
+        }
+        .menu__right{
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+        .menu__right-link{
+            text-decoration: none;
+            color: var(--color-black);
+            font-size:16px;
+            cursor: pointer;
+        }
+        .menu__right-link:hover{
+            color: #000000;
+        }
+    </style>
+}

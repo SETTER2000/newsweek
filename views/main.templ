@@ -1,0 +1,19 @@
+package views
+
+import "github.com/setter2008/newsweek/views/components"
+import "github.com/setter2008/newsweek/views/layout"
+
+templ Main(){
+    @layout.Layout(layout.LayoutProps{
+        Title: "Еженедельник",
+        MetaDescription: "Еженедельные новости, обзор мероприятий и событий в мире.",
+    }){
+        <main>
+            @layout.Header(){
+                @components.Title("Новости")
+                @components.SubTitle("Мировая история космоса")
+            }
+            Main
+        </main>
+    }
+}

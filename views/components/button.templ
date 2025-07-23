@@ -1,0 +1,18 @@
+package components
+
+var red = "#ff0000"
+var blue = "#0000ff"
+
+css primaryClassName() {
+	background-color: #ffffff;
+	color: { red };
+}
+
+css className() {
+	background-color: #ffffff;
+	color: { blue };
+}
+
+templ Button(text string, isPrimary bool) {
+    <button class={ "button", className(), templ.KV(primaryClassName(), isPrimary) }>{ text }</button>
+}
