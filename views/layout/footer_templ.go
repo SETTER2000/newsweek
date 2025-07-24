@@ -74,7 +74,7 @@ func FooterStyle() templ.Component {
 			templ_7745c5c3_Var2 = templ.NopComponent
 		}
 		ctx = templ.ClearChildren(ctx)
-		templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 3, "<style>\n    .footer{\n        display: flex;\n        justify-content: center;\n        flex-direction: column;\n        align-items: center;\n    }\n    .footer__right{\n        display: flex;\n        gap: 20px;\n        align-items: center;\n            }\n    .footer__left{\n        display: flex;\n        gap: 20px;\n        align-items:baseline;\n    }\n   </style>")
+		templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 3, "<style>\r\n    .footer{\r\n        display: flex;\r\n        justify-content: center;\r\n        flex-direction: column;\r\n        align-items: center;\r\n    }\r\n    .footer__right{\r\n        display: flex;\r\n        gap: 20px;\r\n        align-items: center;\r\n            }\r\n    .footer__left{\r\n        display: flex;\r\n        gap: 20px;\r\n        align-items:baseline;\r\n    }\r\n   </style>")
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
