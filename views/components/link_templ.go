@@ -88,7 +88,7 @@ func LinkStyle() templ.Component {
 			templ_7745c5c3_Var4 = templ.NopComponent
 		}
 		ctx = templ.ClearChildren(ctx)
-		templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 4, "<style>\r\n        .link{\r\n            text-decoration: none;\r\n            color: var(--color-black);\r\n            font-size:16px;\r\n            cursor: pointer;\r\n        }\r\n    </style>")
+		templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 4, "<style>\n        .link{\n            text-decoration: none;\n            color: var(--color-black);\n            font-size:16px;\n            cursor: pointer;\n        }\n    </style>")
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}

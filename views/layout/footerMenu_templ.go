@@ -84,7 +84,7 @@ func FooterMenuStyle() templ.Component {
 			templ_7745c5c3_Var2 = templ.NopComponent
 		}
 		ctx = templ.ClearChildren(ctx)
-		templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 4, "<style>\r\n        .menu{\r\n            display: flex;\r\n            justify-content: space-between;\r\n            padding: 20px 0;\r\n            max-width: 1290px;\r\n            align-item: center;\r\n            width: 100%;\r\n        }\r\n        .menu__right{\r\n            display: flex;\r\n            gap: 20px;\r\n            align-items: center;\r\n        }\r\n        .menu__left{\r\n            display: flex;\r\n            gap: 20px;\r\n            align-items:baseline;\r\n        }\r\n\r\n        .menu__right-link:hover{\r\n            color: #000000;\r\n        }\r\n    </style>")
+		templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 4, "<style>\n        .menu{\n            display: flex;\n            justify-content: space-between;\n            padding: 20px 0;\n            max-width: 1290px;\n            align-item: center;\n            width: 100%;\n        }\n        .menu__right{\n            display: flex;\n            gap: 20px;\n            align-items: center;\n        }\n        .menu__left{\n            display: flex;\n            gap: 20px;\n            align-items:baseline;\n        }\n\n        .menu__right-link:hover{\n            color: #000000;\n        }\n    </style>")
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}

@@ -200,7 +200,7 @@ func SectionStyle() templ.Component {
 			templ_7745c5c3_Var8 = templ.NopComponent
 		}
 		ctx = templ.ClearChildren(ctx)
-		templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 9, "<style>\r\n        .section{\r\n            display: flex;\r\n            justify-content: space-between;\r\n            padding: 20px 0;\r\n            max-width: 1290px;\r\n            align-item: center;\r\n            width: 100%;\r\n        }\r\n    </style>")
+		templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 9, "<style>\n        .section{\n            display: flex;\n            justify-content: space-between;\n            padding: 20px 0;\n            max-width: 1290px;\n            align-item: center;\n            width: 100%;\n        }\n    </style>")
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
